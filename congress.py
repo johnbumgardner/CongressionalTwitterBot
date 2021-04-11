@@ -31,7 +31,7 @@ class MyStreamListener(tweepy.StreamListener):
         try:
         	data = get_useful_data(member)
         	#print(data)
-        	status_update =  '@' + tweet.user.screen_name + ' ' + data['name'] + ', a ' + data['party'] + ' ' + data['type'] + ' from ' + data['district'] + ' is reachable at, '
+        	status_update =  '@' + original_tweet.user.screen_name + ' ' + data['name'] + ', a ' + data['party'] + ' ' + data['type'] + ' from ' + data['district'] + ' is reachable at, '
         	status_update += 'Phone: ' + data['phone']
         	#print(status_update)
         	#print(tweet.user.screen_name)
